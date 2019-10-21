@@ -57,6 +57,47 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-grammer-and-api" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2019/10/20/grammer-and-api/" class="article-date">
+  <time datetime="2019-10-20T05:49:00.000Z" itemprop="datePublished">2019-10-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2019/10/20/grammer-and-api/">grammer_and_api</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="JavaScript-与-ECMAScript-的关系"><a href="#JavaScript-与-ECMAScript-的关系" class="headerlink" title="JavaScript 与 ECMAScript 的关系"></a>JavaScript 与 ECMAScript 的关系</h2><p>1996年8月，微软模仿 JavaScript 开发了一种相近的语言，取名为JScript（JavaScript 是 Netscape 的注册商标，微软不能用），首先内置于IE 3.0。Netscape 公司面临丧失浏览器脚本语言的主导权的局面。</p>
+<p>1996年11月，Netscape 公司决定将 JavaScript 提交给国际标准化组织 ECMA（European Computer Manufacturers Association），希望 JavaScript 能够成为国际标准，以此抵抗微软。ECMA 的39号技术委员会（Technical Committee 39）负责制定和审核这个标准，成员由业内的大公司派出的工程师组成，目前共25个人。该委员会定期开会，所有的邮件讨论和会议记录，都是公开的。</p>
+<p>1997年7月，ECMA 组织发布262号标准文件（ECMA-262）的第一版，规定了浏览器脚本语言的标准，并将这种语言称为 ECMAScript。这个版本就是 ECMAScript 1.0 版。之所以不叫 JavaScript，一方面是由于商标的关系，Java 是 Sun 公司的商标，根据一份授权协议，只有 Netscape 公司可以合法地使用 JavaScript 这个名字，且 JavaScript 已经被 Netscape 公司注册为商标，另一方面也是想体现这门语言的制定者是 ECMA，不是 Netscape，这样有利于保证这门语言的开放性和中立性。因此，ECMAScript 和 JavaScript 的关系是，前者是后者的规格，后者是前者的一种实现。在日常场合，这两个词是可以互换的。</p>
+<p>ECMAScript 只用来标准化 JavaScript 这种语言的基本语法结构，与部署环境相关的标准都由其他标准规定，比如 DOM 的标准就是由 W3C组织（World Wide Web Consortium）制定的。</p>
+<p>ECMA-262 标准后来也被另一个国际标准化组织 ISO（International Organization for Standardization）批准，标准号是 ISO-16262。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tunblr.github.io/2019/10/20/grammer-and-api/" data-id="ck202ccvz000019ve6bq1fyr2" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-js-variables-and-types" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/blog/2019/10/18/js-variables-and-types/" class="article-date">
@@ -79,23 +120,36 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="变量和类型"><a href="#变量和类型" class="headerlink" title="变量和类型"></a>变量和类型</h3><ul>
-<li><code>JavaScript</code>规定了几种语言类型</li>
-<li><code>JavaScript</code>对象的底层数据结构是什么</li>
-<li><code>Symbol</code>类型在实际开发中的应用、可手动实现一个简单的<code>Symbol</code></li>
-<li><code>JavaScript</code>中的变量在内存中的具体存储形式</li>
-<li>基本类型对应的内置对象，以及他们之间的装箱拆箱操作</li>
-<li>理解值类型和引用类型</li>
-<li><code>null</code>和<code>undefined</code>的区别</li>
-<li>至少可以说出三种判断<code>JavaScript</code>数据类型的方式，以及他们的优缺点，如何准确的判断数组类型</li>
-<li>可能发生隐式类型转换的场景以及转换原则，应如何避免或巧妙应用</li>
-<li>出现小数精度丢失的原因，<code>JavaScript</code>可以存储的最大数字、最大安全数字，<code>JavaScript</code>处理大数字的方法、避免精度丢失的方法</li>
+        <h3 id="变量和类型"><a href="#变量和类型" class="headerlink" title="变量和类型"></a>变量和类型</h3><h5 id="JavaScript规定了几种语言类型？"><a href="#JavaScript规定了几种语言类型？" class="headerlink" title="JavaScript规定了几种语言类型？"></a><code>JavaScript</code>规定了几种语言类型？</h5><h6 id="原生类型包括6种："><a href="#原生类型包括6种：" class="headerlink" title="原生类型包括6种："></a>原生类型包括6种：</h6><ul>
+<li><p>Number（数字）</p>
+</li>
+<li><p>String（字符串）</p>
+</li>
+<li><p>Boolean（布尔值）</p>
+</li>
+<li><p>Symbol（符号）</p>
+</li>
+<li><p>Null（空）</p>
+</li>
+<li><p>Undefined（未定义）</p>
+</li>
 </ul>
+<h6 id="其余都是对象类型，例如："><a href="#其余都是对象类型，例如：" class="headerlink" title="其余都是对象类型，例如："></a>其余都是对象类型，例如：</h6><ul>
+<li>Function（函数）</li>
+<li>Array（数组）</li>
+<li>Date（日期）</li>
+<li>RegExp（正则表达式）</li>
+</ul>
+<h5 id="typeof运算符"><a href="#typeof运算符" class="headerlink" title="typeof运算符"></a>typeof运算符</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typeof</span> <span class="number">123</span> <span class="comment">// "number"</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="string">'123'</span> <span class="comment">// "string"</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="literal">false</span> <span class="comment">// "boolean"</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line"><span class="keyword">typeof</span> f <span class="comment">// "function"</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="literal">undefined</span> <span class="comment">// "undefined"</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="built_in">window</span> <span class="comment">// "object"</span></span><br><span class="line"><span class="keyword">typeof</span> &#123;&#125; <span class="comment">// "object"</span></span><br><span class="line"><span class="keyword">typeof</span> [] <span class="comment">// "object"</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="literal">null</span> <span class="comment">// "object" 由于历史原因，typeof null 返回 "object"</span></span><br></pre></td></tr></table></figure>
 
+<h5 id="null和undefined的区别"><a href="#null和undefined的区别" class="headerlink" title="null和undefined的区别"></a>null和undefined的区别</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Number</span>(<span class="literal">null</span>) <span class="comment">// 0</span></span><br><span class="line"><span class="number">5</span> + <span class="literal">null</span> <span class="comment">// 5</span></span><br><span class="line"><span class="built_in">Number</span>(<span class="literal">undefined</span>) <span class="comment">// NaN</span></span><br><span class="line"><span class="number">5</span> + <span class="literal">undefined</span> <span class="comment">// NaN</span></span><br></pre></td></tr></table></figure>
+
+
+<h5 id="JavaScript对象的底层数据结构是什么"><a href="#JavaScript对象的底层数据结构是什么" class="headerlink" title="JavaScript对象的底层数据结构是什么"></a><code>JavaScript</code>对象的底层数据结构是什么</h5><h5 id="Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol"><a href="#Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol" class="headerlink" title="Symbol类型在实际开发中的应用、可手动实现一个简单的Symbol"></a><code>Symbol</code>类型在实际开发中的应用、可手动实现一个简单的<code>Symbol</code></h5><h5 id="JavaScript中的变量在内存中的具体存储形式"><a href="#JavaScript中的变量在内存中的具体存储形式" class="headerlink" title="JavaScript中的变量在内存中的具体存储形式"></a><code>JavaScript</code>中的变量在内存中的具体存储形式</h5><h5 id="基本类型对应的内置对象，以及他们之间的装箱拆箱操作"><a href="#基本类型对应的内置对象，以及他们之间的装箱拆箱操作" class="headerlink" title="基本类型对应的内置对象，以及他们之间的装箱拆箱操作"></a>基本类型对应的内置对象，以及他们之间的装箱拆箱操作</h5><h5 id="理解值类型和引用类型"><a href="#理解值类型和引用类型" class="headerlink" title="理解值类型和引用类型"></a>理解值类型和引用类型</h5><h5 id="null和undefined的区别-1"><a href="#null和undefined的区别-1" class="headerlink" title="null和undefined的区别"></a><code>null</code>和<code>undefined</code>的区别</h5><h5 id="至少可以说出三种判断JavaScript数据类型的方式，以及他们的优缺点，如何准确的判断数组类型"><a href="#至少可以说出三种判断JavaScript数据类型的方式，以及他们的优缺点，如何准确的判断数组类型" class="headerlink" title="至少可以说出三种判断JavaScript数据类型的方式，以及他们的优缺点，如何准确的判断数组类型"></a>至少可以说出三种判断<code>JavaScript</code>数据类型的方式，以及他们的优缺点，如何准确的判断数组类型</h5><h5 id="可能发生隐式类型转换的场景以及转换原则，应如何避免或巧妙应用"><a href="#可能发生隐式类型转换的场景以及转换原则，应如何避免或巧妙应用" class="headerlink" title="可能发生隐式类型转换的场景以及转换原则，应如何避免或巧妙应用"></a>可能发生隐式类型转换的场景以及转换原则，应如何避免或巧妙应用</h5><h5 id="出现小数精度丢失的原因，JavaScript可以存储的最大数字、最大安全数字，JavaScript处理大数字的方法、避免精度丢失的方法"><a href="#出现小数精度丢失的原因，JavaScript可以存储的最大数字、最大安全数字，JavaScript处理大数字的方法、避免精度丢失的方法" class="headerlink" title="出现小数精度丢失的原因，JavaScript可以存储的最大数字、最大安全数字，JavaScript处理大数字的方法、避免精度丢失的方法"></a>出现小数精度丢失的原因，<code>JavaScript</code>可以存储的最大数字、最大安全数字，<code>JavaScript</code>处理大数字的方法、避免精度丢失的方法</h5>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://tunblr.github.io/2019/10/18/js-variables-and-types/" data-id="ck1vs1gc600000tqbats91ccn" class="article-share-link">Share</a>
+      <a data-url="https://tunblr.github.io/2019/10/18/js-variables-and-types/" data-id="ck202ccwa000119veg1ijaozr" class="article-share-link">Share</a>
       
       
     </footer>
@@ -134,6 +188,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/blog/2019/10/20/grammer-and-api/">grammer_and_api</a>
+          </li>
         
           <li>
             <a href="/blog/2019/10/18/js-variables-and-types/">JavaScript基础 - 变量和类型</a>
