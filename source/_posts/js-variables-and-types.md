@@ -1,35 +1,30 @@
 ---
-title: JavaScript基础 - 变量和类型
+title: JavaScript的语言类型
 date: 2019-10-18 11:23:52
 tags:
 ---
 
-### 变量和类型
+### `JavaScript`规定了几种语言类型？
 
-##### `JavaScript`规定了几种语言类型？
+###### [原始](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)类型包括7种：
 
-###### 原生类型包括6种：
+- [Boolean](https://developer.mozilla.org/en-US/docs/Glossary/Boolean)（布尔值）
+- [Null](https://developer.mozilla.org/en-US/docs/Glossary/Null)（空）
+- [Undefined](https://developer.mozilla.org/en-US/docs/Glossary/Undefined)（未定义）
+- [Number](https://developer.mozilla.org/en-US/docs/Glossary/Number)（数字）
+- [BigInt](https://developer.mozilla.org/en-US/docs/Glossary/BigInt)
+- [String](https://developer.mozilla.org/en-US/docs/Glossary/String)（字符串）
+- [Symbol](https://developer.mozilla.org/en-US/docs/Glossary/Symbol)（符号）
 
-- Number（数字）
+###### 其余都是[对象](https://developer.mozilla.org/en-US/docs/Glossary/Object)类型，例如：
 
-- String（字符串）
+- [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)（函数）
+- [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)（数组）
+- [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)（字符串）
+- [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)（日期）
+- [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)（正则表达式）
 
-- Boolean（布尔值）
-
-- Symbol（符号）
-
-- Null（空）
-
-- Undefined（未定义）
-
-###### 其余都是对象类型，例如：
-
-- Function（函数）
-- Array（数组）
-- Date（日期）
-- RegExp（正则表达式）
-
-##### typeof运算符
+##### `typeof`运算符
 
 ```javascript
 typeof 123 // "number"
@@ -44,7 +39,9 @@ typeof [] // "object"
 typeof null // "object" 由于历史原因，typeof null 返回 "object"
 ```
 
-##### null和undefined的区别
+##### `null`和`undefined`的区别
+
+`null`表示一个“空”的对象，`undefined`表示一个“未定义”的原始值
 
 ```javascript
 Number(null) // 0
@@ -53,22 +50,26 @@ Number(undefined) // NaN
 5 + undefined // NaN
 ```
 
+返回`undefined`的典型场景
 
-##### `JavaScript`对象的底层数据结构是什么
+```javascript
+// 变量声明了，但没有赋值
+var i;
+i // undefined
 
-##### `Symbol`类型在实际开发中的应用、可手动实现一个简单的`Symbol`
+// 调用函数时，应该提供的参数没有提供，该参数等于 undefined
+function f(x) {
+  return x;
+}
+f() // undefined
 
-##### `JavaScript`中的变量在内存中的具体存储形式
+// 对象没有赋值的属性
+var  o = new Object();
+o.p // undefined
 
-##### 基本类型对应的内置对象，以及他们之间的装箱拆箱操作
+// 函数没有返回值时，默认返回 undefined
+function f() {}
+f() // undefined
+```
 
-##### 理解值类型和引用类型
-
-##### `null`和`undefined`的区别
-
-##### 至少可以说出三种判断`JavaScript`数据类型的方式，以及他们的优缺点，如何准确的判断数组类型
-
-##### 可能发生隐式类型转换的场景以及转换原则，应如何避免或巧妙应用
-
-##### 出现小数精度丢失的原因，`JavaScript`可以存储的最大数字、最大安全数字，`JavaScript`处理大数字的方法、避免精度丢失的方法
-
+[细说 JavaScript 七种数据类型](https://www.cnblogs.com/onepixel/p/5140944.html)
